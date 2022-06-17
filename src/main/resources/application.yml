@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blogdb
+    username: bloguser
+    password: p38ddRm74
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+  sql:
+    init:
+      mode: always
+server:
+  port: 8080
